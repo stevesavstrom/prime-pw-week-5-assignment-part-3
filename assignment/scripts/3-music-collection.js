@@ -1,5 +1,6 @@
 console.log('***** Music Collection *****')
 
+// Creating a variable called collection
 let collection  = [];
 
 // Creating addToCollection function:
