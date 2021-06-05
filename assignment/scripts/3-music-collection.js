@@ -25,7 +25,7 @@ console.log(collection);
 
 // Creating showCollection function:
 function showCollection ( array ) {
-  console.log(array.length);
+  console.log('Number of items in array:', array.length);
   for (var i = 0; i < array.length; i++) {
     console.log(array[i].title, 'by', array[i].artist, 'published in', array[i].yearPublished );
   }
@@ -62,14 +62,14 @@ function search (artist, yearPublished){
 
 // Testing findByArtist function:
 // Should log  an array with a matching artist/album/year.
-
 console.log('Matches all criteria - should log an array with match', search('Phoebe Bridgers', 2020));
 
 // Year doesn't match. Should log an empty array.
 console.log('Year doesnt match - should log empty array', search('Phoebe Bridgers', 1992));
 
-
 // Artist and year don't match. Should log an empty array.
 console.log('Artist and year dont match - should log empty array', search('Sly and the Family Stone', 1971));
 
+// I could not figure out how to return the all the albums in the collection with an empty search.
+// This just returns an empty array.
 console.log(search ());
