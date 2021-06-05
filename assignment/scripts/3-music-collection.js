@@ -1,13 +1,13 @@
 console.log('***** Music Collection *****')
+
 let collection  = [];
-let tracks = [];
+
 // Creating addToCollection function:
-function addToCollection(title, artist, yearPublished, tracks) {
+function addToCollection(title, artist, yearPublished) {
   let album = {
     title: title,
     artist: artist,
     yearPublished: yearPublished,
-    tracks: tracks
   }
   collection.push(album);
   return album;
@@ -22,11 +22,12 @@ addToCollection('Guitar Romantic', 'The Exploding Hearts', 2003);
 addToCollection('Punisher', 'Phoebe Bridgers', 2020);
 console.log(collection);
 
+
 // Creating showCollection function:
 function showCollection ( array ) {
-  console.log(collection.length);
-  for (var i = 0; i < collection.length; i++) {
-    console.log(collection[i].title, 'by', collection[i].artist, 'published in', collection[i].yearPublished );
+  console.log(array.length);
+  for (var i = 0; i < array.length; i++) {
+    console.log(array[i].title, 'by', array[i].artist, 'published in', array[i].yearPublished );
   }
 }
 
