@@ -74,3 +74,5 @@ console.log('Artist and year dont match - should log empty array', search('Sly a
 // I could not figure out how to return the all the albums in the collection with an empty search.
 // This just returns an empty array.
 console.log(search ());
+
+// Testing GitHub SSH key on new Macbook...
